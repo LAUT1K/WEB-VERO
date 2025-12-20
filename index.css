@@ -1,0 +1,40 @@
+
+body { 
+  background-color: #FDFDFD; 
+  color: #121212; 
+  overflow-x: hidden; 
+}
+
+.reveal { 
+  opacity: 0; 
+  transform: translateY(30px); 
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); 
+}
+
+.reveal.active { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+/* Efecto Dorado Metálico */
+.text-gold-metallic {
+  background: linear-gradient(
+    to bottom, 
+    #F2D7A2 0%, 
+    #C5A059 45%, 
+    #A67C37 70%, 
+    #C5A059 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.tangerine-regular { font-family: "Tangerine", cursive; font-weight: 400; }
+.tangerine-bold { font-family: "Tangerine", cursive; font-weight: 700; }
+
+::selection { 
+  background-color: #C5A059; 
+  color: white; 
+}
